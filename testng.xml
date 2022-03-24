@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Avis_US">
+    <parameter name="Brand" value="Avis" /> <!-- <Possible values: Avis/Budget/Paylesscar -->
+    <parameter name="Domain" value="US"></parameter>	<!-- <Possible values: US/CA/AU/NZ> -->
+    <parameter name="Environment" value="qa" />	<!-- < Possible values : uat1/qa2/www/load balancer ip> -->
+    <parameter name="Language" value="EN" />	<!-- <Possible values: currently only EN> -->
+    <parameter name="Browser" value="chrome" />		<!-- <Possible values: chrome/firefox/IE> -->
+    <parameter name="Viewport" value="Dotcom" />   <!-- <Possible values: Dotcom/AMP/Tablet/Mobile> -->
+    <parameter name="Incognito" value="false" />  <!-- <Possible values: true/false> -->
+    <test name="General">
+        <packages>
+            <package name="com.abg.avis" />
+            <package name="com.abg.budget" />
+        </packages>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
